@@ -1,0 +1,23 @@
+#temperature h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.degree-number {
+  font-size: 50px;
+}
+
+.degrees {
+  font-size: 15px;
+  position: relative;
+  bottom: 25px;
+}
+
+.degrees a {
+  text-decoration: none;
+  color: #fff3e2;
+  font-weight: lighter;
+}
+.degrees a:hover {
+  color: white;
+}

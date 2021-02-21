@@ -1,0 +1,51 @@
+.search-bar .col {
+  padding: 0;
+  display: block;
+}
+
+.search-bar .row {
+  padding-left: 10px;
+}
+
+.btn {
+  background-color: #ff9a76;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 10px 14px;
+}
+
+.btn:hover {
+  opacity: 1;
+  background-color: #ff9a76;
+}
+
+.col-6 {
+  padding: 0;
+}
+
+.btn i {
+  color: #214252;
+}
+
+.current-search-btn {
+  background-color: #ff9a76;
+  border-radius: 4px 4px 4px 4px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 10px 14px;
+}
+
+.current-search-btn:hover {
+  opacity: 1;
+  background-color: #ff9a76;
+}
+
+.form-control-search {
+  border-radius: 4px 0 0 4px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+}
