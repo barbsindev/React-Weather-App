@@ -18,7 +18,9 @@ function App() {
             <Forecast />
           </div>
         </div>
+        <a href="https://github.com/barbsindev/React-Weather-App" className="git-link" target="_blank">Open-Source code</a>
       </div>
+      
     </div>
   );
 }
