@@ -1,0 +1,29 @@
+@import "../Scss/Colors";
+@import "../Scss/Fonts";
+
+.searchbar {
+  background-color: $dark-blue;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  &__dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: $black;
+  }
+  &__search {
+    width: 100%;
+  }
+  i {
+    padding: 3px;
+    font-size: 15px;
+  }
+  button {
+    background-color: $white;
+    border: none;
+    border-radius: 0;
+  }
+  input {
+    border: none;
+  }
+}

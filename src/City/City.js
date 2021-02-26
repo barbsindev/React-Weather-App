@@ -1,12 +1,18 @@
 import React from "react";
-import "./City.css";
+import "./City.scss";
 
 export default function City() {
   return (
-    <div className="col">
-      <h2 id="current-city">London</h2>
-      <p className="update-time">Last updated:</p>
-      <h3 id="current-date">Friday 23:00</h3>
-    </div>
+    <section>
+    <div className="city">
+     
+      <h2 className="city_current">London</h2>
+       
+
+     
+    
+    
+  </div>
+    </section>
   );
 }

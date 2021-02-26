@@ -1,30 +1,29 @@
 import React from "react";
-import "./Searchbar.css";
+import "./Searchbar.scss";
 
 export default function Searchbar() {
   return (
-    <div>
-      <form className="search-bar">
-        <div className="row">
-          <div className="col-6">
-            <input
-              type="text"
-              className="form-control-search"
-              placeholder="Enter city..."
-            />
-          </div>
-          <div className="col">
-            <button type="submit" className="btn">
-              <i className="fa fa-search"></i>
-            </button>
-          </div>
-          <div className="col">
-            <button type="submit" className="current-search-btn">
-              Current city
-            </button>
-          </div>
+    <header className="searchbar">
+       <div className="row">
+           <div className="col">
+             <p className="searchbar__dot">  </p>
+             </div>
+              <div className="col">
+               <p className="searchbar__date">Fri 23:00</p>
+           </div> 
+            <div className="col">
+              <i className="fa fa-battery-full"></i>
+              <i className="fa fa-wifi"></i>
+              <i className="fa fa-signal"></i>
+              </div>
         </div>
-      </form>
-    </div>
+        
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Enter city..." aria-label="Recipient's username" aria-describedby="button-addon2"/>
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+</div>
+   
+   
+  </header>
   );
 }
