@@ -6,12 +6,13 @@ import City from "./City/City";
 import Description from "./Description/Description";
 import Forecast from "./Forecast/Forecast";
 
+
 function App() {
   return (
     <div className="App">
       <div className="container-fluid p-0">
-        <Searchbar />
-            <City defaultCity="London"/>
+        <Searchbar defaultCity="London" />
+            <City />
             <Description />
             <Forecast />
           </div>
