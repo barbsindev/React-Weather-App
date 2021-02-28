@@ -14,7 +14,7 @@ export default function Forecast() {
         <p className="forecast__temp">2/4</p>
         </div>
           <div className="col">
-        <h4 className="forecast__day">Mon</h4>
+        <h4 className="forecast__day small">Mon</h4>
         <p className="forecast__temp">2/4</p>
         </div>
          
