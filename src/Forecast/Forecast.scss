@@ -1,10 +1,9 @@
 @import "../Scss/Colors";
 @import "../Scss/Fonts";
 
-.forecast {
+.Forecast {
   background-color: $light-blue;
-  border-radius: 0 0 20px 20px;
-  padding: 20px;
+
   /*display: grid;
 
   grid-template-columns: repeat(12, 1fr);*/
@@ -12,4 +11,7 @@
   &__temp {
     margin: 0;
   }
+}
+.Forecast canvas {
+  display: block;
 }

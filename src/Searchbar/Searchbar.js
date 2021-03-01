@@ -3,6 +3,7 @@ import "./Searchbar.scss";
 import axios from "axios";
 import FormattedDate from "../FormattedDate";
 import WeatherInfo from "../WeatherInfo";
+import Forecast from "../Forecast/Forecast";
 
 
 export default function Searchbar(props) {
@@ -61,8 +62,8 @@ setCity(event.target.value);
   <input type="search" className="form-control" placeholder="Enter city..." aria-label="Recipient's username" aria-describedby="button-addon2" onChange={handleCity}/>
   <button className="btn btn-outline-secondary" type="submit" id="button-addon2"><i className="fa fa-search"></i></button>
 </form>
-   <WeatherInfo data = {weatherData}/>  
-  
+   <WeatherInfo data = {weatherData} className="p-0"/>  
+  <Forecast city={weatherData.city}/>
  </section>
   );
   }else{
