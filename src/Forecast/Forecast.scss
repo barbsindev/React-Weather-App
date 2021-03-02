@@ -2,16 +2,13 @@
 @import "../Scss/Fonts";
 
 .Forecast {
+  text-align: center;
   background-color: $light-blue;
-
-  /*display: grid;
-
-  grid-template-columns: repeat(12, 1fr);*/
+  border-radius: 10px;
+  padding: 20px;
+  column-gap: 10px;
 
   &__temp {
     margin: 0;
   }
-}
-.Forecast canvas {
-  display: block;
 }
