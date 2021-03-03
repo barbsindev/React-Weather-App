@@ -6,6 +6,7 @@ import WeatherConversion from "./WeatherConversion";
 export default function WeatherInfo(props){
 return(
     <section>
+         <FormattedDate date = {props.data.date}/> 
     <div className="city">
      
       <h2 className="city_current">{props.data.city}</h2>
@@ -20,8 +21,7 @@ return(
         </div>
     <div className="description" >
       <div className="col">
-    <WeatherIcon code={props.data.icon}/>
-      <img src={props.data.icon} alt={props.data.description} className="description_icon" />
+
       <p className="description_attributes">
         Humidity: <span className="desciption_humidity"> {props.data.humidity}</span>% <br />
         Wind: <span className="description_wind">{props.data.wind}</span>km/h
@@ -29,6 +29,7 @@ return(
       </div>
     </div>
     </div>
+   
     </section>
 )
 }

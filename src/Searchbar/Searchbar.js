@@ -4,11 +4,43 @@ import axios from "axios";
 import FormattedDate from "../FormattedDate";
 import WeatherInfo from "../WeatherInfo";
 import Forecast from "../Forecast/Forecast";
-
+import Background from "../Background";
+import clear from "../images/clear.jpg";
+import cloudy from "../images/cloudy.jpg";
+import fog from "../images/fog.jpg";
+import icecrystals from "../images/ice-crystals.jpg";
+import mostlysunny from "../images/mostly-sunny.jpg";
+import partlycloudy from "../images/partly-cloudy.jpg";
+import rain from "../images/rain.jpg";
+import sleet from "../images/sleet.jpg";
+import snow from "../images/snow.jpg";
+import sunny from "../images/sunny.jpg";
+import thunder from "../images/thunder.jpg";
 
 export default function Searchbar(props) {
   let [city, setCity]=useState(props.defaultCity);
   let [weatherData, setWeatherData]=useState({ready: false});
+
+   const imageMapping = {
+    Clear: clear,
+    Clouds: cloudy,
+    Mist: fog,
+    Smoke: cloudy,
+    Haze: partlycloudy,
+    Dust: fog,
+    Fog: fog,
+    Sand: cloudy,
+    Ash: cloudy,
+    Squal: cloudy,
+    Tornado: thunder,
+    Snow: snow,
+    Rain: rain,
+    Drizzle: rain,
+    Thunderstorm:thunder,
+    Sunny:sunny,
+    Sleet:sleet
+  };
+
   function handleResponse(response){
     console.log(response.data);
     setWeatherData({
@@ -19,7 +51,8 @@ export default function Searchbar(props) {
       humidity:response.data.main.humidity,
       description:response.data.weather[0].description,
       date:new Date(response.data.dt * 1000),
-      icon:response.data.weather[0].icon
+      icon:response.data.weather[0].icon,
+      background:response.data.weather[0].main
    
     });
    
@@ -43,16 +76,17 @@ setCity(event.target.value);
   }
   if (weatherData.ready){
     return (
+       <div className="container-fluid p-0"   style={{ 
+            backgroundImage: `url(${
+              imageMapping[weatherData.background]
+            })`, 
+          }}>
     <section>
       <div className="searchbar">
        <div className="row">
            <div className="col">
              <p className="searchbar__dot"> </p> </div>
-               <div className="col">
-              
-           <FormattedDate date = {weatherData.date}/> 
-              
-           </div> 
+          
              
             <div className="col">
              <svg className="searchbar__mbicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-vibrate" viewBox="0 0 16 16">
@@ -84,7 +118,7 @@ setCity(event.target.value);
 </form></div>
    <WeatherInfo data = {weatherData} className="p-0"/>  
   <Forecast city={weatherData.city}/>
- </section>
+ </section></div>
   );
   }else{
   

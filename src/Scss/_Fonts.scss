@@ -1,13 +1,20 @@
 @import "../Scss/Colors";
 
 p {
-  color: $black;
   font-size: 15px;
 }
 
+.units {
+  color: $white;
+}
+
+a {
+  color: $white;
+  font-size: 20px;
+}
 canvas {
   display: block;
-  color: white;
+  color: $white;
   width: 25px;
 }
 

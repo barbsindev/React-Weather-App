@@ -1,15 +1,11 @@
 @import "./Scss/Colors";
-
 @import "~bootstrap/scss/bootstrap";
-
+@import "./Scss/Fonts";
 .container-fluid {
   max-width: 325px;
   border: black 1px solid;
   border-radius: 20px;
-  background-color: $blue;
-  /*padding-right: 0px;
-  padding-left: 0px;
-  padding: 10px;*/
+
   margin: 0 auto;
   color: $white;
 }

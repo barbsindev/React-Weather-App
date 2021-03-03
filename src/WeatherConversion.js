@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./WeatherConversion.scss";
 
 export default function WeatherConversion(props){
      const [unit, setUnit] = useState("celsius");
@@ -15,14 +16,14 @@ setUnit("fahrenheit");
          return(
         
      <section>
-             <h1>
-        <span className="temperature_number">{Math.round(props.celsius)}</span>
-        <span className="temperature_units">
+             <h1 className="temperature">
+        <span className="temperature__number">{Math.round(props.celsius)}</span>
+        <span className="temperature__units">
           {" "}
-          <a href="#" className="temperature_celsius" >
+          <a href="#" className="temperature__celsius " >
             °C |
           </a>{" "}
-          <a href="#" className="temperature_farenheit" onClick = {convertTofahrenheit}>
+          <a href="#" className="temperature__farenheit" onClick = {convertTofahrenheit}>
             °F
           </a>
         </span>

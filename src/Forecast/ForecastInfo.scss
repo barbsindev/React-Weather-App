@@ -3,12 +3,18 @@
 
 .Forecast {
   text-align: center;
-  background-color: $light-blue;
+  background-color: $opacity;
   border-radius: 10px;
   padding: 20px;
-  column-gap: 10px;
+  column-gap: 15px;
 
   &__temp {
     margin: 0;
   }
+  .col {
+    font-size: 11px;
+  }
+}
+.col-2 {
+  font-size: 0.75rem;
 }

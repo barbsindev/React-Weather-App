@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Forecast.scss";
+import "./ForecastInfo.scss";
 import axios from "axios";
 import WeatherIcon from "../WeatherIcon";
 import ForecastInfo from "./ForecastInfo";
@@ -17,7 +17,7 @@ setLoaded(true);
 
   if (loaded && props.city === forecast.city.name){
     return(
-    <div className="Forecast row m-0">
+    <div className="Forecast row m-0 small">
 
           <ForecastInfo data={forecast.list[0]} />
           <ForecastInfo data={forecast.list[1]} />
