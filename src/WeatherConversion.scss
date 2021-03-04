@@ -1,9 +1,17 @@
 @import "./Scss/Fonts";
 @import "./Scss/Colors";
 
-/*.temperature__units {
-  font-size: 20px;
+.temperature {
+  font-size: 2.5rem !important;
+  &__celsius {
+    color: $white !important;
+  }
+  &__farenheit {
+    color: $white !important;
+  }
+  &__units {
+    position: relative;
+    bottom: 15px;
+    right: 5px;
+  }
 }
-.temperature a {
-  color: $white;
-}*/

@@ -15,9 +15,9 @@ return `${temperature}`;
 return(
  <div classname="col">
     
-{hours()}
+ {temperature()}°
       <WeatherIcon code= {props.data.weather[0].icon} />
-      {temperature()}
+     {hours()}
     </div>
       )
     }

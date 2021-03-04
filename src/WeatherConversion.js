@@ -15,8 +15,8 @@ setUnit("fahrenheit");
       
          return(
         
-     <section>
-             <h1 className="temperature">
+   
+             <h1 className="temperature p-0 m-0">
         <span className="temperature__number">{Math.round(props.celsius)}</span>
         <span className="temperature__units">
           {" "}
@@ -28,7 +28,7 @@ setUnit("fahrenheit");
           </a>
         </span>
       </h1>
-       </section>
+  
          )
      }else{  
          let fahrenheit = (props.celsius * 9) / 5 + 32;
@@ -36,16 +36,11 @@ return (
 
  
     <section>
-             <h1>
-        <span className="temperature_number">{Math.round(fahrenheit)}</span>
-        <span className="temperature_units">
-          {" "}
-          <a href="#" className="temperature_celsius" onClick = {convertToCelsius}>
-            °C |
-          </a>{" "}
-          <a href="#" className="temperature_farenheit" >
-            °F
-          </a>
+             <h1 className="temperature">
+        <span className="temperature__number">{Math.round(fahrenheit)}</span>
+        <span className="temperature__units">
+          <a href="#" className="temperature__celsius" onClick = {convertToCelsius}>°C|</a>
+          <a href="#" className="temperature__farenheit">°F</a>
         </span>
       </h1>
        </section>

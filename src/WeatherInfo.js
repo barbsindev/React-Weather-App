@@ -5,11 +5,11 @@ import WeatherConversion from "./WeatherConversion";
 
 export default function WeatherInfo(props){
 return(
-    <section>
+    <article>
          <FormattedDate date = {props.data.date}/> 
     <div className="city">
      
-      <h2 className="city_current">{props.data.city}</h2>
+      <h2 className="city__current m-0">{props.data.city}</h2>
    
   </div>
 
@@ -17,19 +17,19 @@ return(
       <div className="col">
           <WeatherConversion celsius={props.data.temperature}/>
            
-      <h3 className="temperature__description text-capitalize">{props.data.description}</h3>
+      <h5 className="temperature__description  text-capitalize m-0">{props.data.description}</h5>
         </div>
     <div className="description" >
       <div className="col">
 
-      <p className="description_attributes">
-        Humidity: <span className="desciption_humidity"> {props.data.humidity}</span>% <br />
-        Wind: <span className="description_wind">{props.data.wind}</span>km/h
+      <p className="description__attributes m-0">
+        Humidity: <span className="desciption__humidity"> {props.data.humidity}</span>% <br />
+        Wind: <span className="description__wind">{Math.round(props.data.wind)}</span>km/h
       </p>
       </div>
     </div>
     </div>
    
-    </section>
+    </article>
 )
 }

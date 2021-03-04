@@ -32,7 +32,7 @@ export default function Bsackground(props){
   };
     return (
     <span className="Icon">
-      <img src={iconMapping[props.data]} alt="icon" className="img-fluid"/>
+      <img src={iconMapping[props.data]} alt="icon" className="img-fluid"  fluid/>
     </span>
   );
 

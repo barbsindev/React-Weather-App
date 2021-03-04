@@ -5,7 +5,7 @@ import Searchbar from "./Searchbar/Searchbar";
 import clear from "./images/clear.jpg";
 import Forecast from "./Forecast/Forecast";
 
-import Background from "./Background";
+
 
 function App() {
 

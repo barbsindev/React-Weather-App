@@ -1,6 +1,7 @@
 @import "./Scss/Colors";
 @import "~bootstrap/scss/bootstrap";
 @import "./Scss/Fonts";
+
 .container-fluid {
   max-width: 325px;
   border: black 1px solid;
@@ -8,6 +9,8 @@
 
   margin: 0 auto;
   color: $white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 footer {

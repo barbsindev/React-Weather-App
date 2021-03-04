@@ -10,7 +10,23 @@ let days = [
     "Fri",
     "Sat"
   ];
+      let months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    let month = months[props.date.getMonth()];
   let day = days[props.date.getDay()];
+  let date = props.date.getDate();
   let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -22,7 +38,8 @@ let days = [
   }
   return (
     <div>
-      {day} {hours}:{minutes}
+        <h6 className="m-0">
+     {date} {month},  {hours}:{minutes}</h6>
     </div>
   );
 }
