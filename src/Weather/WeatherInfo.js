@@ -18,7 +18,7 @@ return(
       <div className="col description">
       <p className="description__attributes m-0">
         Humidity: <span className="desciption__humidity"> {props.data.humidity}</span>% <br />
-        Wind: <span className="description__wind">{Math.round(props.data.wind)}</span>km/h
+        Wind: <span className="description__wind">{Math.round(props.data.wind)}</span> km/h
       </p>
       </div>
     </div>
