@@ -1,14 +1,11 @@
-@import "../../node_modules/bootstrap/scss/colors.scss";
-@import "../../node_modules/bootstrap/scss/fonts.scss";
-
 .temperature {
   font-size: 2.5rem !important;
   text-align: left;
   &__celsius {
-    color: $white !important;
+    color: white !important;
   }
   &__farenheit {
-    color: $white !important;
+    color: white !important;
   }
   &__units {
     position: relative;

@@ -1,5 +1,3 @@
-@import "../../node_modules/bootstrap/scss/colors.scss";
-
 .searchbar {
   padding: 10px;
   border-radius: 10px;
@@ -7,7 +5,7 @@
     width: 100%;
   }
   button {
-    background-color: $white;
+    background-color: white;
     border: none;
     border-radius: 0 20px 20px 0;
   }

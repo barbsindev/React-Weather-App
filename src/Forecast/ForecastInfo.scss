@@ -1,9 +1,6 @@
-@import "../../node_modules/bootstrap/scss/colors.scss";
-@import "../../node_modules/bootstrap/scss/fonts.scss";
-
 .Forecast {
   text-align: center;
-  background-color: $opacity;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 
   &__temp {
