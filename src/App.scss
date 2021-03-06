@@ -1,6 +1,6 @@
-@import "./Scss/colors";
+@import "/node_modules/bootstrap/scss/colors.scss";
 @import "~bootstrap/scss/bootstrap";
-@import "./Scss/fonts";
+@import "/node_modules/bootstrap/scss/fonts.scss";
 
 .App {
   margin-top: 30px;
