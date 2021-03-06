@@ -9,9 +9,9 @@ import sleet from "./images/sleet.jpg";
 import snow from "./images/snow.jpg";
 import sunny from "./images/sunny.jpg";
 import thunder from "./images/thunder.jpg";
-import "./Background.scss";
 
-export default function Bsackground(props){
+
+export default function Background(props){
     const iconMapping = {
     Clear: clear,
     Clouds: cloudy,
@@ -31,8 +31,8 @@ export default function Bsackground(props){
     Sunny:sunny
   };
     return (
-    <span className="Icon">
-      <img src={iconMapping[props.data]} alt="icon" className="img-fluid"  fluid/>
+    <span className="bg-image">
+      <img src={iconMapping[props.data]} alt="background-image"/>
     </span>
   );
 

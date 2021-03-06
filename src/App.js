@@ -2,14 +2,10 @@ import React from "react";
 import "./App.scss";
 import "./index.scss";
 import Searchbar from "./Searchbar/Searchbar";
-import clear from "./images/clear.jpg";
-import Forecast from "./Forecast/Forecast";
 
 
 
 function App() {
-
-
   return (
     <div className="App">
         <Searchbar defaultCity="London" />

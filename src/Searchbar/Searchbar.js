@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./Searchbar.scss";
 import axios from "axios";
 import FormattedDate from "../FormattedDate";
-import WeatherInfo from "../WeatherInfo";
+import WeatherInfo from "../../src/Weather/WeatherInfo";
+import WeatherIcon from "../Weather/WeatherIcon";
 import Forecast from "../Forecast/Forecast";
 import Background from "../Background";
 import clear from "../images/clear.jpg";
@@ -16,7 +17,7 @@ import sleet from "../images/sleet.jpg";
 import snow from "../images/snow.jpg";
 import sunny from "../images/sunny.jpg";
 import thunder from "../images/thunder.jpg";
-import "../Background.scss";
+
 
 export default function Searchbar(props) {
   let [city, setCity]=useState(props.defaultCity);
@@ -43,7 +44,7 @@ export default function Searchbar(props) {
   };
 
   function handleResponse(response){
-    console.log(response.data);
+   
     setWeatherData({
       ready: true,
       temperature:response.data.main.temp,
@@ -54,7 +55,6 @@ export default function Searchbar(props) {
       date:new Date(response.data.dt * 1000),
       icon:response.data.weather[0].icon,
       background:response.data.weather[0].main
-   
     });
    
 
@@ -83,12 +83,10 @@ setCity(event.target.value);
             })`, 
           }}>
     <header>
-      <div className="searchbar">
-      
+      <div className="searchbar"> 
     <form  className="input-group mb-3" onSubmit={handleSubmit}> 
-
   <input type="search" className="form-control" placeholder="Enter city..." aria-label="Recipient's username" aria-describedby="button-addon2" onChange={handleCity}/>
-  <button className="btn btn-outline-secondary" type="submit" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <button className="btn btn-outline-secondary" type="submit" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 </svg></button>
 </form></div></header>
@@ -98,7 +96,6 @@ setCity(event.target.value);
  </section></div>
   );
   }else{
-  
   search();
   return ("loading");
   }

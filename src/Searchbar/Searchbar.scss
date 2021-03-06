@@ -1,20 +1,12 @@
-@import "../Scss/Colors";
-@import "../Scss/Fonts";
+@import "../Scss/colors";
+@import "../Scss/fonts";
 
 .searchbar {
   padding: 10px;
-
   border-radius: 10px;
-  &__dot {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background: $black;
-  }
   &__search {
     width: 100%;
   }
-
   button {
     background-color: $white;
     border: none;
@@ -24,11 +16,4 @@
     border: none;
     border-radius: 20px 0 0 20px;
   }
-}
-.mbicon {
-  text-align: end;
-}
-svg {
-  padding-right: 5px;
-  width: 25px;
 }

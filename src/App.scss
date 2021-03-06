@@ -1,13 +1,15 @@
-@import "./Scss/Colors";
+@import "./Scss/colors";
 @import "~bootstrap/scss/bootstrap";
-@import "./Scss/Fonts";
+@import "./Scss/fonts";
 
+.App {
+  margin-top: 30px;
+}
 .container-fluid {
   max-width: 325px;
   border: black 1px solid;
   border-radius: 20px;
-
-  margin: 0 auto;
+  margin: 0px auto;
   color: $white;
   background-size: cover;
   background-repeat: no-repeat;

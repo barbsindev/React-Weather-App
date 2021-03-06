@@ -1,8 +1,9 @@
-@import "./Scss/Fonts";
-@import "./Scss/Colors";
+@import "../Scss/fonts";
+@import "../Scss/colors";
 
 .temperature {
   font-size: 2.5rem !important;
+  text-align: left;
   &__celsius {
     color: $white !important;
   }
@@ -12,6 +13,6 @@
   &__units {
     position: relative;
     bottom: 15px;
-    right: 5px;
+    left: 2px;
   }
 }
