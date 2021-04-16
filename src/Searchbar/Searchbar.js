@@ -17,7 +17,7 @@ import sleet from "../images/sleet.jpg";
 import snow from "../images/snow.jpg";
 import sunny from "../images/sunny.jpg";
 import thunder from "../images/thunder.jpg";
-
+import DailyForecast from '../Forecast/DailyForecast';
 
 export default function Searchbar(props) {
   let [city, setCity]=useState(props.defaultCity);
@@ -47,6 +47,7 @@ export default function Searchbar(props) {
    
     setWeatherData({
       ready: true,
+      coordinates:response.data.coord,
       temperature:response.data.main.temp,
       city:response.data.name,
       wind:response.data.wind.speed,
@@ -92,7 +93,8 @@ setCity(event.target.value);
 </form></div></header>
 <section>
    <WeatherInfo data = {weatherData} className="p-0"/>  
-  <Forecast city={weatherData.city}/>
+  <Forecast city={weatherData.city} coordinates={weatherData.coordinates}/>
+    <DailyForecast coordinates={weatherData.coordinates}/>
  </section></div>
   );
   }else{
