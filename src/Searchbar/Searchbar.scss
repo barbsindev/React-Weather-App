@@ -14,3 +14,9 @@
     border-radius: 20px 0 0 20px;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .container-fluid {
+    max-width: 100%;
+  }
+}

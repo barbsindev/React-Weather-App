@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,kBAAkB;EACpC,aAAa,EAAE,IAAI;CASpB;;AAPE,AAAD,eAAO,CAAC;EACN,MAAM,EAAE,CAAC;CACV;;AAPH,AAQE,SARO,CAQP,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,aAAa;CACvB",
+    "sources": [
+        "ForecastInfo.scss"
+    ],
+    "names": [],
+    "file": "ForecastInfo.css"
+}

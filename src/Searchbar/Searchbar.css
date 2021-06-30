@@ -1,0 +1,20 @@
+.searchbar {
+  padding: 30px 10px 0 10px;
+  border-radius: 10px;
+}
+
+.searchbar__search {
+  width: 100%;
+}
+
+.searchbar button {
+  background-color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+}
+
+.searchbar input {
+  border: none;
+  border-radius: 20px 0 0 20px;
+}
+/*# sourceMappingURL=Searchbar.css.map */

@@ -1,0 +1,15 @@
+.Forecast {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.Forecast__temp {
+  margin: 0;
+}
+
+.Forecast .col {
+  font-size: 11px;
+  padding: 15px 0 15px 0;
+}
+/*# sourceMappingURL=ForecastInfo.css.map */

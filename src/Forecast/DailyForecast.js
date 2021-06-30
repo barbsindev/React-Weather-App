@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./ForecastInfo.scss";
 import axios from "axios";
 import WeatherIcon from "../Weather/WeatherIcon";
-import ForecastInfo from "./ForecastInfo";
+import './DailyForecast.scss';
 import ForecastDays from './ForecastDays';
 
 export default function WeatherForecast(props) {
@@ -22,12 +22,12 @@ setLoaded(true);
  if (loaded){
    return(
  <div className="WeatherForecast">
-      <div className="row">
+      <div className=" forecast p-0 m-0 row">
         
         {forecast.map(function(dailyforecast, index){
           if (index < 5){
             return(
-          <div className="col" key={index}>
+          <div className="col p-0 m-0" key={index}>
               <ForecastDays data={dailyforecast}/> 
                </div>
           )}else{
